@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aesthetics Pro Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+<script src="js/form.js"></script>
+  </head>
+  <h1>Skin & Health Questionnaire</h1>
+  <body>
+    <form class="cmxform" id="commentForm" method="get" action="">
+      <fieldset>
+        <legend>Please provide your name, email address (won't be published) and a comment</legend>
+        <p>
+          <label for="name">Name (required, at least 2 characters)</label>
+          <input id="name" name="name" type="text" >
+        </p>
+        <p>
+          <label for="address">Address</label>
+          <input id="address" name="address" type="text" >
+        </p>
+        <p>
+          <label for="city">City</label>
+          <input id="city" name="city" type="text" >
+        </p>
+        <p>
+          <label for="zip">Zip Code (required)</label>
+          <input id="zip" name="zip" type="number" >
+        </p>
+        <p>
+          <label for="state">URL (optional)</label>
+          <input id="state" type="text" name="state">
+        </p>
+        <p>
+          <label for="cemail">E-Mail (required)</label>
+          <input id="cemail" type="email" name="email" required>
+        </p>
+        <p>
+          <label for="ccomment">Your comment (required)</label>
+          <textarea id="ccomment" name="comment"></textarea>
+        </p>
+        <p>
+          <input class="submit" type="submit" value="Submit">
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
