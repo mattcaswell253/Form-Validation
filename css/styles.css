@@ -18,6 +18,8 @@ h1, h3{
   margin-top: 25px;
   margin-bottom: 25px;
   padding-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .form-control-lg{
   border-radius: 5px;
@@ -36,11 +38,6 @@ input{
   border: solid grey 1px;
   border-radius: 5px;
 }
-/*input, label {
-  display: block;
-  margin-right: 10px;
-}*/
-
 input[type="radio"]{
   margin: 0 5px 0 5px;
 }
@@ -61,14 +58,12 @@ input[type="radio"]{
 .skin{
   font-size: 16px;
 }
-
 .yes-label{
   width: auto;
 }
 .skin-health{
   text-align: center;
 }
-
 .head{
   text-align: center;
 }
@@ -85,4 +80,7 @@ input[type="radio"]{
 .text{
   border: solid grey 1px;
   border-radius: 5px;
+}
+.big, html{
+  background-color: #F1F1F1;
 }
