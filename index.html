@@ -11,57 +11,53 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
   <script src="js/form.js"></script>
 </head>
-
 <body>
   <h1>Skin & Health Questionnaire</h1>
-  <div class="container ">
+  <div class="container main">
     <form class="cmxform" id="commentForm" method="get" action="">
       <legend><p class="blurb">Please answer the following questions thoroughly and completely, as this provides a better understanding of your general health, lifestyle and skin care concerns; thereby enabling the best treatment and home care recommendations.</p></legend>
-      <div class="">
-        <div class="row">
-          <div class=" form-group  col-md-4 col-sm-4">
-            <label class="bold-label" for="name">Name</label>
-            <input class="form-control-lg" id="name" name="name" type="text" >
-          </div>
-          <div class="form-group  col-md-4 col-sm-4">
-            <label class="bold-label" for="dob">DOB</label>
-            <input class="form-control-lg" id="dob"type="date" name="dob">
-          </div>
-          <div class ="form-group col-md-4 col-sm-4">
-            <label class="bold-label" for="cemail">E-Mail (required)</label>
-            <input class="form-control-lg" id="cemail" type="email" name="email">
-          </div>
+
+      <div class="row">
+        <div class=" form-group  col-md-4 col-sm-4">
+          <label class="bold-label" for="name">Name</label>
+          <input class="form-control-lg" id="name" name="name" type="text" >
+        </div>
+        <div class="form-group  col-md-4 col-sm-4">
+          <label class="bold-label" for="dob">DOB</label>
+          <input class="form-control-lg" id="dob"type="date" name="dob">
+        </div>
+        <div class ="form-group col-md-4 col-sm-4">
+          <label class="bold-label" for="cemail">E-Mail</label>
+          <input class="form-control-lg" id="cemail" type="email" name="email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-4">
+          <label class="bold-label" for="address">Address</label>
+          <input class="form-control-lg" id="address" name="address" type="text" >
+        </div>
+        <div class="form-group col-md-3">
+          <label class="bold-label" for="city">City</label>
+          <input class="form-control-lg" id="city" name="city" type="text" >
+        </div>
+        <div class="form-group col-md-2">
+          <label class="bold-label" for="state">State</label>
+          <input class="form-control-lg" id="state" type="text" name="state">
         </div>
 
-        <div class="row">
-          <div class="form-group col-md-4">
-            <label class="bold-label" for="address">Address</label>
-            <input class="form-control-lg" id="address" name="address" type="text" >
-          </div>
-          <div class="form-group col-md-3">
-            <label class="bold-label" for="city">City</label>
-            <input class="form-control-lg" id="city" name="city" type="text" >
-          </div>
-          <div class="form-group col-md-2">
-            <label class="bold-label" for="state">State</label>
-            <input class="form-control-lg" id="state" type="text" name="state">
-          </div>
-
-          <div class="form-group col-md-3">
-            <label class="bold-label" for="zip">Zip Code</label>
-            <input class="form-control-lg" id="zip" name="zip" >
-          </div>
+        <div class="form-group col-md-3">
+          <label class="bold-label" for="zip">Zip Code</label>
+          <input class="form-control-lg" id="zip" name="zip" >
         </div>
-
-        <p class="note">
-          **Appointments confirmed via email unless otherwise noted
-        </p>
-        <div class="row">
+      </div>
+      <p class="note">
+        **Appointments confirmed via email unless otherwise noted
+      </p>
+      <div class="row">
         <div class="form-group col-md-4">
           <label class="bold-label" for="ccomment">Occupation</label>
           <input class="form-control-lg" id="ccomment" name="comment"></input>
         </div>
-
         <div class="form-group col-md-4">
           <label class="bold-label" for="cell-phone">Cell Phone</label>
           <input class="form-control-lg" id="cell-phone"  name="cell-phone"></input>
@@ -70,20 +66,123 @@
           <label class="bold-label" for="alt-phone">Alternate Phone</label>
           <input class="form-control-lg" id="alt-phone"  name="alt-phone"></input>
         </div>
-        </div>
-
-        <div class="row">
-
-
+      </div>
+      <div class="row">
         <div class="thank form-group col-md-6">
           <label class="bold-label" for="thank">Let us thank the person who reffered you</label>
           <input class="form-control-lg" id="thank" type="text" name="thank"></input>
-          </div>
         </div>
       </div>
-      <p>
-        <input class="submit" type="submit" value="Submit">
-      </p>
+      <h2>Skin Care History</h2>
+
+      <p class="concerns">What concerns you? please check all that apply:</p>
+      <div class="container skin-history">
+
+        <div class="row">
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Discoloration
+        </label>
+      </div>
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Enlarged Pores
+        </label>
+      </div>
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Sun Damage
+        </label>
+      </div>
+      </div>
+      <div class="row">
+
+
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Fine Lines & Wrinkles
+        </label>
+      </div>
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Rosacea
+        </label>
+      </div>
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Loss of Facial Contours
+        </label>
+      </div>
+        </div>
+        <div class="row">
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Dry, Flaky Skin
+        </label>
+      </div>
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Dilated Capillaries
+        </label>
+      </div>
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Lax or Sagging Skin
+        </label>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Oily Skin/Acne/Breakouts
+        </label>
+      </div>
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Redness (Reactive Skin)
+        </label>
+      </div>
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Double Chin
+        </label>
+      </div>
+      </div>
+      <div class="row">
+
+
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Scarring
+        </label>
+      </div>
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Uneven Texture
+        </label>
+      </div>
+      <div class="form-check col-md-3 offset-md-1">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="option1">
+          Dark Under-Eye Circles
+        </label>
+      </div>
+      </div>
+      </div>
     </form>
   </div>
 </body>
