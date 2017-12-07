@@ -12,11 +12,13 @@
   <script src="js/form.js"></script>
 </head>
 <body>
-  <h1>Skin & Health Questionnaire</h1>
+
   <div class="container main">
     <form class="cmxform" id="commentForm" method="get" action="">
+      <div class="head">
+      <h1>Skin & Health Questionnaire</h1>
       <legend><p class="blurb">Please answer the following questions thoroughly and completely, as this provides a better understanding of your general health, lifestyle and skin care concerns; thereby enabling the best treatment and home care recommendations.</p></legend>
-
+    </div>
       <div class="row">
         <div class=" form-group  col-md-4 col-sm-4">
           <label class="bold-label" for="name">Name</label>
@@ -285,9 +287,60 @@
           <label class="radio-inline">
             <input type="radio" name="reaction">No
           </label>
-          <p>If yes please list:</p>
+          <div class="row">
+            <label class="form-control-lg col-md-2 supp-list "><p class="if-yes">If yes, please list:</p></label>
+            <input class="form-control-lg col-md-10" type="text"/>
+          </div>
         </div>
       </div>
+
+      <div class="container gen-health bold-label">
+        <h3>General Health</h3>
+        <br>
+        <label class="radio-inline">
+          Are you currently under the care of a primary care physician?
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="primary">Yes
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="primary">No
+        </label>
+        <p>If yes, please discuss contraindications of any pre-existing medical conditions with your physician.</p>
+        <label class="radio-inline">
+          <p>Are you currently taking any medications?</p>
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="medication">Yes
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="medication">No
+        </label>
+        <br />
+        <label class="radio-inline">
+          <p>Do you take herbs or supplements? </p>
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="supplements">Yes
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="supplements">No
+        </label>
+        <div class="row">
+          <label class="form-control-lg col-md-2 supp-list "><p class="if-yes">If yes, please list:</p></label>
+          <input class="form-control-lg col-md-10" type="text"/>
+        </div>
+        <label class="radio-inline">
+          <p>Are you allergic to aspirin?</p>
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="retinol">Yes
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="retinolr">No
+        </label>
+      </div>
+
 
     </form>
   </div>

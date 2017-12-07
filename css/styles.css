@@ -8,6 +8,10 @@
 h1, h2{
   text-align: center;
 }
+h1, h3{
+  display: inline-block;
+  border-bottom: solid black 2px;
+}
 .main{
   border: solid grey 1px;
   border-radius: 5px;
@@ -28,6 +32,7 @@ input:focus{
 }
 input{
   border: solid grey 1px;
+  border-radius: 5px;
 }
 /*input, label {
   display: block;
@@ -39,9 +44,6 @@ input[type="radio"]{
 }
 .bold-label{
   font-weight: 600;
-}
-legend{
-  text-align: center;
 }
 .blurb{
   font-size: 18px;
@@ -56,4 +58,17 @@ legend{
 }
 .skin{
   font-size: 16px;
+}
+
+.yes-label{
+  width: auto;
+}
+.skin-health{
+  text-align: center;
+}
+.gen-health{
+  margin-top: 25px;
+}
+.head{
+  text-align: center;
 }
