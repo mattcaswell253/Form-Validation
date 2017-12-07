@@ -12,12 +12,12 @@ $().ready(function() {
           email: "required"
         },
         messages: {
-        name: "please enter your full name",
-        address: "please enter your address",
-        city: "please enter your city",
-        zip: "please enter your zip",
-        state: "please enter your state",
-        email: "please enter your email"
+        name: "Please enter your full name",
+        address: "Please enter your address",
+        city: "Please enter your city",
+        zip: "Please enter your zip",
+        state: "Please enter your state",
+        email: "Please enter your email"
         }
     });
 });

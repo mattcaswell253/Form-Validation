@@ -12,373 +12,354 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
   <script src="js/form.js"></script>
 </head>
+
 <div class="big">
-<body>
-  <div class="container main">
-
-    <form class="cmxform" id="commentForm" method="get" action="">
-      <div class="head">
-        <h1>Skin & Health Questionnaire</h1>
-        <legend><p class="blurb">Please answer the following questions thoroughly and completely, as this provides a better understanding of your general health, lifestyle and skin care concerns; thereby enabling the best treatment and home care recommendations.</p></legend>
-      </div>
-      <div class="required">
-      <span >* Required</span>
+  <body>
+    <div class="container main">
+      <form class="cmxform" id="commentForm" method="get" action="">
+        <div class="head">
+          <h1>Skin & Health Questionnaire</h1>
+          <legend><p class="blurb">Please answer the following questions thoroughly and completely, as this provides a better understanding of your general health, lifestyle and skin care concerns; thereby enabling the best treatment and home care recommendations.</p></legend>
         </div>
-      <div class="row">
-        <div class=" form-group  col-md-4 col-sm-4">
-          <label class="bold-label" for="name"><span class="required">*</span>  Name</label>
-          <input class="form-control-lg" id="name" name="name" type="text" >
+        <div class="required">
+          <span >* Required</span>
         </div>
-        <div class="form-group  col-md-4 col-sm-4">
-          <label class="bold-label" for="dob">DOB</label>
-          <input class="form-control-lg" id="dob"type="date" name="dob">
-        </div>
-        <div class ="form-group col-md-4 col-sm-4">
-          <label class="bold-label" for="cemail">E-Mail</label>
-          <input class="form-control-lg" id="cemail" type="email" name="email">
-        </div>
-      </div>
-      <div class="row">
-        <div class="form-group col-md-4">
-          <label class="bold-label" for="address"><span class="required">*</span> Address</label>
-          <input class="form-control-lg" id="address" name="address" type="text" >
-        </div>
-        <div class="form-group col-md-3">
-          <label class="bold-label" for="city"><span class="required">*</span> City</label>
-          <input class="form-control-lg" id="city" name="city" type="text" >
-        </div>
-        <div class="form-group col-md-2">
-          <label class="bold-label" for="state"><span class="required">*</span> State</label>
-          <input class="form-control-lg" id="state" type="text" name="state">
-        </div>
-
-        <div class="form-group col-md-3">
-          <label class="bold-label" for="zip"><span class="required">*</span> Zip Code</label>
-          <input class="form-control-lg" id="zip" name="zip" >
-        </div>
-      </div>
-      <p class="note">
-        ***Appointments confirmed via email unless otherwise noted
-      </p>
-      <div class="row">
-        <div class="form-group col-md-4">
-          <label class="bold-label" for="ccomment">Occupation</label>
-          <input class="form-control-lg" id="ccomment" name="comment"></input>
-        </div>
-        <div class="form-group col-md-4">
-          <label class="bold-label" for="cell-phone">Cell Phone</label>
-          <input class="form-control-lg" id="cell-phone"  name="cell-phone"></input>
-        </div>
-        <div class="form-group col-md-4">
-          <label class="bold-label" for="alt-phone">Alternate Phone</label>
-          <input class="form-control-lg" id="alt-phone"  name="alt-phone"></input>
-        </div>
-      </div>
-      <div class="row">
-        <div class="thank form-group col-md-6">
-          <label class="bold-label" for="thank">Let us thank the person who reffered you</label>
-          <input class="form-control-lg" id="thank" type="text" name="thank"></input>
-        </div>
-      </div>
-      <h3 class="skin-care">Skin Care History</h3>
-
-      <p class="concerns">What concerns you? please check all that apply:</p>
-      <div class="container skin-history">
-
         <div class="row">
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Discoloration
-            </label>
+          <div class=" form-group  col-md-4 col-sm-4">
+            <label class="bold-label" for="name"><span class="required">*</span>  Name:</label>
+            <input class="form-control-lg" id="name" name="name" type="text" >
           </div>
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Enlarged Pores
-            </label>
+          <div class="form-group  col-md-4 col-sm-4">
+            <label class="bold-label" for="dob">DOB:</label>
+            <input class="form-control-lg" id="dob"type="date" name="dob">
           </div>
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Sun Damage
-            </label>
+          <div class ="form-group col-md-4 col-sm-4">
+            <label class="bold-label" for="cemail">E-Mail:</label>
+            <input class="form-control-lg" id="cemail" type="email" name="email">
           </div>
         </div>
         <div class="row">
-
-
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Fine Lines & Wrinkles
-            </label>
+          <div class="form-group col-md-4">
+            <label class="bold-label" for="address"><span class="required">*</span> Address:</label>
+            <input class="form-control-lg" id="address" name="address" type="text" >
           </div>
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Rosacea
-            </label>
+          <div class="form-group col-md-3">
+            <label class="bold-label" for="city"><span class="required">*</span> City:</label>
+            <input class="form-control-lg" id="city" name="city" type="text" >
           </div>
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Loss of Facial Contours
-            </label>
+          <div class="form-group col-md-2">
+            <label class="bold-label" for="state"><span class="required">*</span> State:</label>
+            <input class="form-control-lg" id="state" type="text" name="state">
+          </div>
+          <div class="form-group col-md-3">
+            <label class="bold-label" for="zip"><span class="required">*</span> Zip Code:</label>
+            <input class="form-control-lg" id="zip" name="zip" >
+          </div>
+        </div>
+        <p class="note">
+          ***Appointments confirmed via email unless otherwise noted
+        </p>
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label class="bold-label" for="ccomment">Occupation:</label>
+            <input class="form-control-lg" id="ccomment" name="comment"></input>
+          </div>
+          <div class="form-group col-md-4">
+            <label class="bold-label" for="cell-phone">Cell Phone:</label>
+            <input class="form-control-lg" id="cell-phone"  name="cell-phone"></input>
+          </div>
+          <div class="form-group col-md-4">
+            <label class="bold-label" for="alt-phone">Alternate Phone:</label>
+            <input class="form-control-lg" id="alt-phone"  name="alt-phone"></input>
           </div>
         </div>
         <div class="row">
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Dry, Flaky Skin
-            </label>
-          </div>
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Dilated Capillaries
-            </label>
-          </div>
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Lax or Sagging Skin
-            </label>
+          <div class="thank form-group col-md-6">
+            <label class="bold-label" for="thank">Let us thank the person who reffered you</label>
+            <input class="form-control-lg" id="thank" type="text" name="thank"></input>
           </div>
         </div>
-        <div class="row">
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Oily Skin/Acne/Breakouts
-            </label>
-          </div>
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Redness (Reactive Skin)
-            </label>
-          </div>
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Double Chin
-            </label>
-          </div>
-        </div>
-        <div class="row">
 
-
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Scarring
-            </label>
-          </div>
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Uneven Texture
-            </label>
-          </div>
-          <div class="form-check col-md-3 offset-md-1">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" value="option1">
-              Dark Under-Eye Circles
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <div class="container yes-no">
-        <form class="" action="index.html" method="post">
-
-
-          <label class="radio-inline">
-            <p>Any History of Skin Cancers?</p>
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="history">Yes
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="history">No
-          </label>
-        </form>
-        <div class="skin">
+        <h3 class="skin-care">Skin Care History</h3>
+        <p class="concerns">What concerns you? please check all that apply:</p>
+        <div class="container skin-history">
           <div class="row">
-            <div class="col-md-6">
-              <label class="radio-inline">
-                <p>Do you sunbathe or participate in outdoor activities?</p>
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="outdoor">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="outdoor">No
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Discoloration
               </label>
             </div>
-            <div class="col-md-6">
-
-
-              <label class="radio-inline">
-                <p>Do you Wear SPF?</p>
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Enlarged Pores
               </label>
-              <label class="radio-inline">
-                <input type="radio" name="skin">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="skin">No
+            </div>
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Sun Damage
               </label>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
-              <label class="radio-inline">
-                <p>Are you currently on antibiotics?</p>
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="anti">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="anti">No
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Fine Lines & Wrinkles
               </label>
             </div>
-            <div class="col-md-6">
-
-
-              <label class="radio-inline">
-                <p>Have you taken Acccutane in the past?</p>
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Rosacea
               </label>
-              <label class="radio-inline">
-                <input type="radio" name="accutane">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="accutane">No
+            </div>
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Loss of Facial Contours
               </label>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
-              <label class="radio-inline">
-                <p>Do you use Retinol?</p>
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="retinol">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="retinol">No
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Dry, Flaky Skin
               </label>
             </div>
-            <div class="col-md-6">
-              <label class="radio-inline">
-                <p>Do you have a permanent cosmetics?</p>
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="permanent">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="permanent">No
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Dilated Capillaries
               </label>
             </div>
-
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Lax or Sagging Skin
+              </label>
+            </div>
           </div>
+          <div class="row">
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Oily Skin/Acne/Breakouts
+              </label>
+            </div>
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Redness (Reactive Skin)
+              </label>
+            </div>
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Double Chin
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Scarring
+              </label>
+            </div>
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Uneven Texture
+              </label>
+            </div>
+            <div class="form-check col-md-3 offset-md-1">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="option1">
+                Dark Under-Eye Circles
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="container yes-no">
+          <form class="" action="index.html" method="post">
+            <label class="radio-inline">
+              <p>Any History of Skin Cancers?</p>
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="history">Yes
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="history">No
+            </label>
+          </form>
+          <div class="skin">
+            <div class="row">
+              <div class="col-md-6">
+                <label class="radio-inline">
+                  <p>Do you sunbathe or participate in outdoor activities?</p>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="outdoor">Yes
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="outdoor">No
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label class="radio-inline">
+                  <p>Do you Wear SPF?</p>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="skin">Yes
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="skin">No
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label class="radio-inline">
+                  <p>Are you currently on antibiotics?</p>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="anti">Yes
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="anti">No
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label class="radio-inline">
+                  <p>Have you taken Acccutane in the past?</p>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="accutane">Yes
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="accutane">No
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label class="radio-inline">
+                  <p>Do you use Retinol?</p>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="retinol">Yes
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="retinol">No
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label class="radio-inline">
+                  <p>Do you have a permanent cosmetics?</p>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="permanent">Yes
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="permanent">No
+                </label>
+              </div>
+            </div>
+            <label class="radio-inline">
+              <p>Have you ever had a reaction to any skin care products or cosmetic?</p>
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="reaction">Yes
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="reaction">No
+            </label>
+            <div class="row">
+              <label class="form-control-lg col-md-2 supp-list "><p class="if-yes">If yes, please list:</p></label>
+              <input class="form-control-lg col-md-10" type="text"/>
+            </div>
+          </div>
+        </div>
+        <div class="container gen-health bold-label">
+          <h3 class="gen-head">General Health</h3>
+          <br>
           <label class="radio-inline">
-            <p>Have you ever had a reaction to any skin care products or cosmetic?</p>
+            <p>  Are you currently under the care of a primary care physician?</p>
           </label>
           <label class="radio-inline">
-            <input type="radio" name="reaction">Yes
+            <input type="radio" name="primary">Yes
           </label>
           <label class="radio-inline">
-            <input type="radio" name="reaction">No
+            <input type="radio" name="primary">No
+          </label>
+          <label class="radio-inline">
+            <p>If yes, please discuss contraindications of any pre-existing medical conditions with your physician.</p>
+          </label>
+          <br>
+          <label class="radio-inline">
+            <p>Are you currently taking any medications?</p>
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="medication">Yes
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="medication">No
+          </label>
+          <br />
+          <label class="radio-inline">
+            <p>Do you take herbs or supplements? </p>
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="supplements">Yes
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="supplements">No
           </label>
           <div class="row">
             <label class="form-control-lg col-md-2 supp-list "><p class="if-yes">If yes, please list:</p></label>
             <input class="form-control-lg col-md-10" type="text"/>
           </div>
-        </div>
-      </div>
-
-      <div class="container gen-health bold-label">
-        <h3 class="gen-head">General Health</h3>
-        <br>
-        <label class="radio-inline">
-          <p>  Are you currently under the care of a primary care physician?</p>
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="primary">Yes
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="primary">No
-        </label>
-        <label class="radio-inline">
-          <p>If yes, please discuss contraindications of any pre-existing medical conditions with your physician.</p>
-        </label>
-        <br>
-        <label class="radio-inline">
-          <p>Are you currently taking any medications?</p>
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="medication">Yes
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="medication">No
-        </label>
-        <br />
-        <label class="radio-inline">
-          <p>Do you take herbs or supplements? </p>
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="supplements">Yes
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="supplements">No
-        </label>
-        <div class="row">
-          <label class="form-control-lg col-md-2 supp-list "><p class="if-yes">If yes, please list:</p></label>
-          <input class="form-control-lg col-md-10" type="text"/>
-        </div>
-
-
-
-        <label class="radio-inline">
-          <p>Are you allergic to aspirin?</p>
-        </label>
-
-        <label class="radio-inline">
-          <input type="radio" name="retinol">Yes
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="retinolr">No
-        </label>
-        <br>
-        <div class="row">
-          <label class="form-control-lg col-md-4 supp-list "><p class="if-yes">Any Known Allergies, please list:</p></label>
-          <input class="form-control-lg col-md-8" type="text"/>
-        </div>
-
-        <div class=" consultation">
-          <label class="form-control-lg">Is there anything else that should be known before your consultation or treatment?
+          <label class="radio-inline">
+            <p>Are you allergic to aspirin?</p>
           </label>
-          <textarea class="text"name="cons" rows="5" cols="50"></textarea>
+          <label class="radio-inline">
+            <input type="radio" name="aspirin">Yes
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="aspirin">No
+          </label>
+          <br>
+          <div class="row">
+            <label class="form-control-lg col-md-4 supp-list "><p class="if-yes">Any Known Allergies, please list:</p></label>
+            <input class="form-control-lg col-md-8" type="text"/>
+          </div>
+          <div class=" consultation">
+            <label class="form-control-lg">Is there anything else that should be known before your consultation or treatment?
+            </label>
+            <textarea class="text"name="cons" rows="5" cols="50"></textarea>
+          </div>
+          <div class="row">
+            <div class="col-md-1 ">
+              <label class=" form-control-lg">Signature</label>
+            </div>
+            <div class="col-md-5  offset-md-1">
+              <input class="form-control-lg" type="text" >
+            </div>
+            <div class="col-md-1">
+              <label class=" form-control-lg">Date</label>
+            </div>
+            <div class="col-md-3">
+              <input class="form-control-lg" type="date" name="date">
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-md-1 ">
-            <label class=" form-control-lg">Signature</label>
-          </div>
-          <div class="col-md-5  offset-md-1">
-            <input class="form-control-lg" type="text" >
-          </div>
-          <div class="col-md-1">
-            <label class=" form-control-lg">Date</label>
-          </div>
-          <div class="col-md-3">
-            <input class="form-control-lg" type="date" name="date">
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</body>
+      </form>
+    </div>
+  </body>
 </div>
 </html>
