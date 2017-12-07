@@ -29,10 +29,13 @@ input:focus{
 input{
   border: solid grey 1px;
 }
-input, label {
+/*input, label {
   display: block;
   margin-right: 10px;
+}*/
 
+input[type="radio"]{
+  margin: 0 5px 0 5px;
 }
 .bold-label{
   font-weight: 600;
@@ -45,4 +48,12 @@ legend{
 }
 .concerns{
   text-align: center;
+}
+.yes-no{
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.skin{
+  font-size: 16px;
 }
