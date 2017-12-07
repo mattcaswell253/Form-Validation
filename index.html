@@ -1,51 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Aesthetics Pro Form</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
-<script src="js/form.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Aesthetics Pro Form</title>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+  <script src="js/form.js"></script>
+</head>
+
+<body>
   <h1>Skin & Health Questionnaire</h1>
-  <body>
+  <div class="container ">
     <form class="cmxform" id="commentForm" method="get" action="">
-      <fieldset>
-        <legend>Please provide your name, email address (won't be published) and a comment</legend>
-        <p>
-          <label for="name">Name (required, at least 2 characters)</label>
-          <input id="name" name="name" type="text" >
+      <legend><p class="blurb">Please answer the following questions thoroughly and completely, as this provides a better understanding of your general health, lifestyle and skin care concerns; thereby enabling the best treatment and home care recommendations.</p></legend>
+      <div class="">
+        <div class="row">
+          <div class=" form-group  col-md-4 col-sm-4">
+            <label class="bold-label" for="name">Name</label>
+            <input class="form-control-lg" id="name" name="name" type="text" >
+          </div>
+          <div class="form-group  col-md-4 col-sm-4">
+            <label class="bold-label" for="dob">DOB</label>
+            <input class="form-control-lg" id="dob"type="date" name="dob">
+          </div>
+          <div class ="form-group col-md-4 col-sm-4">
+            <label class="bold-label" for="cemail">E-Mail (required)</label>
+            <input class="form-control-lg" id="cemail" type="email" name="email">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label class="bold-label" for="address">Address</label>
+            <input class="form-control-lg" id="address" name="address" type="text" >
+          </div>
+          <div class="form-group col-md-3">
+            <label class="bold-label" for="city">City</label>
+            <input class="form-control-lg" id="city" name="city" type="text" >
+          </div>
+          <div class="form-group col-md-2">
+            <label class="bold-label" for="state">State</label>
+            <input class="form-control-lg" id="state" type="text" name="state">
+          </div>
+
+          <div class="form-group col-md-3">
+            <label class="bold-label" for="zip">Zip Code</label>
+            <input class="form-control-lg" id="zip" name="zip" >
+          </div>
+        </div>
+
+        <p class="note">
+          **Appointments confirmed via email unless otherwise noted
         </p>
-        <p>
-          <label for="address">Address</label>
-          <input id="address" name="address" type="text" >
-        </p>
-        <p>
-          <label for="city">City</label>
-          <input id="city" name="city" type="text" >
-        </p>
-        <p>
-          <label for="zip">Zip Code (required)</label>
-          <input id="zip" name="zip" type="number" >
-        </p>
-        <p>
-          <label for="state">URL (optional)</label>
-          <input id="state" type="text" name="state">
-        </p>
-        <p>
-          <label for="cemail">E-Mail (required)</label>
-          <input id="cemail" type="email" name="email" required>
-        </p>
-        <p>
-          <label for="ccomment">Your comment (required)</label>
-          <textarea id="ccomment" name="comment"></textarea>
-        </p>
-        <p>
-          <input class="submit" type="submit" value="Submit">
-        </p>
-      </fieldset>
+        <div class="row">
+        <div class="form-group col-md-4">
+          <label class="bold-label" for="ccomment">Occupation</label>
+          <input class="form-control-lg" id="ccomment" name="comment"></input>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label class="bold-label" for="cell-phone">Cell Phone</label>
+          <input class="form-control-lg" id="cell-phone"  name="cell-phone"></input>
+        </div>
+        <div class="form-group col-md-4">
+          <label class="bold-label" for="alt-phone">Alternate Phone</label>
+          <input class="form-control-lg" id="alt-phone"  name="alt-phone"></input>
+        </div>
+        </div>
+
+        <div class="row">
+
+
+        <div class="thank form-group col-md-6">
+          <label class="bold-label" for="thank">Let us thank the person who reffered you</label>
+          <input class="form-control-lg" id="thank" type="text" name="thank"></input>
+          </div>
+        </div>
+      </div>
+      <p>
+        <input class="submit" type="submit" value="Submit">
+      </p>
     </form>
-  </body>
+  </div>
+</body>
 </html>
