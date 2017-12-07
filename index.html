@@ -13,19 +13,20 @@
   <script src="js/form.js"></script>
 </head>
 <div class="big">
-
-
 <body>
-
   <div class="container main">
+
     <form class="cmxform" id="commentForm" method="get" action="">
       <div class="head">
         <h1>Skin & Health Questionnaire</h1>
         <legend><p class="blurb">Please answer the following questions thoroughly and completely, as this provides a better understanding of your general health, lifestyle and skin care concerns; thereby enabling the best treatment and home care recommendations.</p></legend>
       </div>
+      <div class="required">
+      <span >* Required</span>
+        </div>
       <div class="row">
         <div class=" form-group  col-md-4 col-sm-4">
-          <label class="bold-label" for="name">Name</label>
+          <label class="bold-label" for="name"><span class="required">*</span>  Name</label>
           <input class="form-control-lg" id="name" name="name" type="text" >
         </div>
         <div class="form-group  col-md-4 col-sm-4">
@@ -39,25 +40,25 @@
       </div>
       <div class="row">
         <div class="form-group col-md-4">
-          <label class="bold-label" for="address">Address</label>
+          <label class="bold-label" for="address"><span class="required">*</span> Address</label>
           <input class="form-control-lg" id="address" name="address" type="text" >
         </div>
         <div class="form-group col-md-3">
-          <label class="bold-label" for="city">City</label>
+          <label class="bold-label" for="city"><span class="required">*</span> City</label>
           <input class="form-control-lg" id="city" name="city" type="text" >
         </div>
         <div class="form-group col-md-2">
-          <label class="bold-label" for="state">State</label>
+          <label class="bold-label" for="state"><span class="required">*</span> State</label>
           <input class="form-control-lg" id="state" type="text" name="state">
         </div>
 
         <div class="form-group col-md-3">
-          <label class="bold-label" for="zip">Zip Code</label>
+          <label class="bold-label" for="zip"><span class="required">*</span> Zip Code</label>
           <input class="form-control-lg" id="zip" name="zip" >
         </div>
       </div>
       <p class="note">
-        **Appointments confirmed via email unless otherwise noted
+        ***Appointments confirmed via email unless otherwise noted
       </p>
       <div class="row">
         <div class="form-group col-md-4">
@@ -79,7 +80,7 @@
           <input class="form-control-lg" id="thank" type="text" name="thank"></input>
         </div>
       </div>
-      <h3>Skin Care History</h3>
+      <h3 class="skin-care">Skin Care History</h3>
 
       <p class="concerns">What concerns you? please check all that apply:</p>
       <div class="container skin-history">
@@ -374,14 +375,8 @@
           <div class="col-md-3">
             <input class="form-control-lg" type="date" name="date">
           </div>
-
-
         </div>
-
-
       </div>
-
-
     </form>
   </div>
 </body>

@@ -1,10 +1,3 @@
-.error{
-  border-color: red;
-  color: red;
-  display: block;
-  font-style: italic;
-  font-weight: normal;
-}
 h1, h2{
   text-align: center;
 }
@@ -12,27 +5,8 @@ h1, h3{
   display: inline-block;
   border-bottom: solid black 2px;
 }
-.main{
-  border: solid grey 1px;
-  border-radius: 5px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding-bottom: 20px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.form-control-lg{
-  border-radius: 5px;
-  width: 100%;
-  height: 40px;
-}
 input:focus{
   outline: none;
-}
-.gen-info{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 input{
   border: solid grey 1px;
@@ -41,6 +15,34 @@ input{
 input[type="radio"]{
   margin: 0 5px 0 5px;
 }
+.big, html{
+  background-color: #F1F1F1;
+}
+.error{
+  border-color: red;
+  color: red;
+  display: block;
+  font-style: italic;
+  font-weight: normal;
+}
+.main{
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+.form-control-lg{
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+}
+.gen-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .bold-label{
   font-weight: 600;
 }
@@ -48,7 +50,11 @@ input[type="radio"]{
   font-size: 18px;
 }
 .concerns{
-  text-align: center;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.note{
+  font-weight: 600;
 }
 .yes-no{
   margin-top: 20px;
@@ -81,6 +87,11 @@ input[type="radio"]{
   border: solid grey 1px;
   border-radius: 5px;
 }
-.big, html{
-  background-color: #F1F1F1;
+.skin-care{
+  margin-bottom: 25px;
+}
+.required{
+  margin-bottom: 15px;
+  font-style: italic;
+  color: red;
 }
