@@ -16,9 +16,9 @@
   <div class="container main">
     <form class="cmxform" id="commentForm" method="get" action="">
       <div class="head">
-      <h1>Skin & Health Questionnaire</h1>
-      <legend><p class="blurb">Please answer the following questions thoroughly and completely, as this provides a better understanding of your general health, lifestyle and skin care concerns; thereby enabling the best treatment and home care recommendations.</p></legend>
-    </div>
+        <h1>Skin & Health Questionnaire</h1>
+        <legend><p class="blurb">Please answer the following questions thoroughly and completely, as this provides a better understanding of your general health, lifestyle and skin care concerns; thereby enabling the best treatment and home care recommendations.</p></legend>
+      </div>
       <div class="row">
         <div class=" form-group  col-md-4 col-sm-4">
           <label class="bold-label" for="name">Name</label>
@@ -295,10 +295,10 @@
       </div>
 
       <div class="container gen-health bold-label">
-        <h3>General Health</h3>
+        <h3 class="gen-head">General Health</h3>
         <br>
         <label class="radio-inline">
-          Are you currently under the care of a primary care physician?
+          <p>  Are you currently under the care of a primary care physician?</p>
         </label>
         <label class="radio-inline">
           <input type="radio" name="primary">Yes
@@ -306,7 +306,10 @@
         <label class="radio-inline">
           <input type="radio" name="primary">No
         </label>
-        <p>If yes, please discuss contraindications of any pre-existing medical conditions with your physician.</p>
+        <label class="radio-inline">
+          <p>If yes, please discuss contraindications of any pre-existing medical conditions with your physician.</p>
+        </label>
+        <br>
         <label class="radio-inline">
           <p>Are you currently taking any medications?</p>
         </label>
@@ -330,15 +333,48 @@
           <label class="form-control-lg col-md-2 supp-list "><p class="if-yes">If yes, please list:</p></label>
           <input class="form-control-lg col-md-10" type="text"/>
         </div>
+
+
+
         <label class="radio-inline">
           <p>Are you allergic to aspirin?</p>
         </label>
+
         <label class="radio-inline">
           <input type="radio" name="retinol">Yes
         </label>
         <label class="radio-inline">
           <input type="radio" name="retinolr">No
         </label>
+        <br>
+        <div class="row">
+          <label class="form-control-lg col-md-4 supp-list "><p class="if-yes">Any Known Allergies, please list:</p></label>
+          <input class="form-control-lg col-md-8" type="text"/>
+        </div>
+
+        <div class=" consultation">
+          <label class="form-control-lg">Is there anything else that should be known before your consultation or treatment?
+          </label>
+          <textarea class="text"name="cons" rows="5" cols="50"></textarea>
+        </div>
+        <div class="row">
+          <div class="col-md-1 ">
+            <label class=" form-control-lg">Signature</label>
+          </div>
+          <div class="col-md-5  offset-md-1">
+            <input class="form-control-lg" type="text" >
+          </div>
+          <div class="col-md-1">
+            <label class=" form-control-lg">Date</label>
+          </div>
+          <div class="col-md-3">
+            <input class="form-control-lg" type="date" name="date">
+          </div>
+
+
+        </div>
+
+
       </div>
 
 
